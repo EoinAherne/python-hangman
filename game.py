@@ -22,3 +22,7 @@ class game:
             if char == guess:
                 word_location.append(index)
         return word_location
+
+    def update(self, idx, letter):
+        for number in idx:
+            self.display[idx] = letter
