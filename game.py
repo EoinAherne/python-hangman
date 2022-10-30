@@ -55,4 +55,12 @@ def run():
             print(f'Completed in {word.guesses} guesses')
             break
 
-run()
+
+def gameloop():
+    while True:
+        response = input('Do you want to play Hangman? ' )
+        if response == 'no':
+            break
+        run()
+
+gameloop()
