@@ -5,17 +5,16 @@ print('--------------------------------')
 
 words = ['start', 'hangman', 'college']
 
+
 class game:
     def __init__(self):
         self.word = random.choice(words)
         self.display = ['_' for letter in self.word]
         self.guesses = 0
 
-
     def show(self):
         display = ' '.join(self.display)
         print(f'The answer is: {display}')
-
 
     def get_word(self, guess):
         word_location = []
@@ -24,17 +23,14 @@ class game:
                 word_location.append(index)
         return word_location
 
-
     def update(self, index, letter):
         for number in index:
             self.display[number] = letter
-
 
     def check_guess(self, guess):
         if guess in self.word:
             index = self.get_word(guess)
             self.update(index, guess)
-
 
     def check_win(self):
         display = "".join(self.display)
