@@ -3,7 +3,7 @@ import random
 print('Welcome to the game. Lets begin!')
 print('--------------------------------')
 
-words = ['start', 'hangman', 'college', 'game', 'computer', 'application', 'hardware', 'portfolio', 'course']
+words = ['start', 'hangman', 'college']
 
 class game:
     def __init__(self):
@@ -25,19 +25,19 @@ class game:
         return word_location
 
 
-    def update(self, idx, letter):
-        for number in idx:
-            self.display[idx] = letter
+    def update(self, index, letter):
+        for number in index:
+            self.display[number] = letter
 
 
     def check_guess(self, guess):
         if guess in self.word:
-            idx == self.get_word(guess)
-            self.update(idx, guess)
+            index = self.get_word(guess)
+            self.update(index, guess)
 
 
     def check_win(self):
-        display = " ".join(self.display)
+        display = "".join(self.display)
         word = self.word
         if display == word:
             print('You won the game!!!!!')
@@ -47,10 +47,12 @@ class game:
 def run():
     word = game() #Takes game class and creates run object
     while True:
-        guess = input("Choose a letter")
+        guess = input("Choose a letter: ")
         word.check_guess(guess) #Check guesses
         word.show() #Show results
         word.guesses +=1 #Add one
         if word.check_win():
             print(f'Completed in {word.guesses} guesses')
             break
+
+run()
