@@ -42,3 +42,15 @@ class game:
         if display == word:
             print('You won the game!!!!!')
             return True
+
+
+def run():
+    word = game() #Takes game class and creates run object
+    while True:
+        guess = input("Choose a letter")
+        word.check_guess(guess) #Check guesses
+        word.show() #Show results
+        word.guesses +=1 #Add one
+        if word.check_win():
+            print(f'Completed in {word.guesses} guesses')
+            break
