@@ -32,5 +32,13 @@ class game:
 
     def check_guess(self, guess):
         if guess in self.word:
-            if guess == self.get_word(guess)
+            idx == self.get_word(guess)
             self.update(idx, guess)
+
+
+    def check_win(self):
+        display = " ".join(self.display)
+        word = self.word
+        if display == word:
+            print('You won the game!!!!!')
+            return True
