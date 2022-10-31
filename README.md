@@ -5,12 +5,12 @@
 Find a link to the final deployed version here *[Hangman](https://hangman-college.herokuapp.com/)*.
 
 
-python-hangman is a back=end CLI hangman game. Created using python classes, and object orientated programming principles within class design.
+python-hangman is a back-end CLI hangman game. Created using python classes, and object orientated programming principles within class design.
 
 
 # Features
 
-The computer generates a random word from a pre writted list. The game lets users input guesses as letters to the terminal. The computer can check these guesses against its randomly chosen word to see if the guessed letter is the same. If the letter is the same it appears in the space on the diplay of the hidden word. After the word is guessed correctly, the word is tested to see if it matches the full hidden word. If so the player wins and is told how many guesses it took them to complete the word.
+The computer generates a random word from a pre written list. The game lets users input guesses as letters to the terminal. The computer can check these guesses against its randomly chosen word to see if the guessed letter is the same. If the letter is the same it appears in the space on the diplay of the hidden word. After the word is guessed correctly, the word is tested to see if it matches the full hidden word. If so the player wins and is told how many guesses it took them to complete the word.
 
 ## Future features
 
@@ -29,7 +29,8 @@ I ran the dev tools lighthouse testing and achieved a high scores for Performanc
 
 ## Validation
 
-Pep8 online was not working when i tried to validate my python code. I used the VSCode validator and have cleaned up any errors i came across along my way.
+Pep8 online was not working when i tried to validate my python code. 
+I used the VSCode validator and have cleaned up any errors i came across along my way.
 
 
 ## Technologies used
