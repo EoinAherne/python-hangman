@@ -1,8 +1,30 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Heroku](../hangman_herokudeployment.png)
 
-Welcome EoinAherne,
+# About
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+python-hangman is a back=end CLI hangman game. Created using python classes, and object orientated programming principles within class design.  
+
+
+# Features
+
+The computer generates a random word from a pre writted list. The game lets users input guesses as letters to the terminal. The computer can check these guesses against its randomly chosen word to see if the guessed letter is the same. If the letter is the same it appears in the space on the diplay of the hidden word. After the word is guessed correctly, the word is tested to see if it matches the full hidden word. If so the player wins and is told how many guesses it took them to complete the word.        
+
+# Testing
+
+I have thoroughly examined this application for any errors that may arise when trying to use any of the functions. I have found that everything works as intended and the deployed game can be played without issue. I sent the link to a couple of my friends via email link and they all reported to have no issues playing through the game 
+
+## Automated Testing
+
+I ran the dev tools lighthouse testing and achieved a high scores for Performance, Accessibility and Best Practices 
+
+## Validation
+
+Pep8 online was not working when i tried to validate my code. I used the VSCode validator and have cleaned up any errors i came across along my way.   
+
+## Technologies used
+
+- Python
+- Heroku
 
 ## Reminders
 
@@ -10,7 +32,9 @@ This is the Code Institute student template for deploying your third portfolio p
 * Your dependencies must be placed in the `requirements.txt` file
 * Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## Deployment
+
+### Creating the Heroku app
 
 When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
@@ -19,13 +43,5 @@ When you create the app, you will need to add two buildpacks from the _Settings_
 
 You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
 Connect your GitHub repository and deploy as normal.
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
